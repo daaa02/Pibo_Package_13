@@ -64,7 +64,7 @@ class Mus():
             cwc.writerow(['user', answer[0][1], answer[1]])
             self.reject.append(answer[1])
             
-            if answer[0][0] == "done" or answer[0][0] == "yes" or answer[0][0] == "next" or answer[0][0] ==:
+            if answer[0][0] == "done" or answer[0][0] == "yes" or answer[0][0] == "next" or answer[0][0] == "action":
                 pibo = cm.tts(bhv="do_joy_A", string=f"좋았어. 놀이 방법을 알려줄께!")
                 time.sleep(1)                
                 pibo = cm.tts(bhv="do_explain_B", string=f"곡식을 넣은 양말은 개미가 열심히 일 해서 마련한 식량이야. 곡식 주머니를 조심히 떨어트리지 않고 머리나 어깨에 얹고 운반해보자!")
